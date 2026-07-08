@@ -1,21 +1,30 @@
-<HomeScreen>
+#:kivy 2.3.0
 
-    orientation: "vertical"
-    padding: 20
-    spacing: 20
+AppManager:
 
-    Label:
-        text: "Percentage Calculator"
-        font_size: 30
+<HomeScreen>:
+    name: "home"
 
-    TextInput:
-        hint_text: "Amount"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 20
 
-    TextInput:
-        hint_text: "Percentage"
+        Label:
+            text: "Percentage Calculator"
+            font_size: 30
 
-    Button:
-        text: "Calculate"
+        TextInput:
+            hint_text: "Amount"
 
-    Label:
-        text: "Result"
+        TextInput:
+            hint_text: "Percentage"
+
+        Button:
+            text: "Calculate"
+
+        Label:
+            text: "Result"
+
+<AppManager>:
+    HomeScreen:
