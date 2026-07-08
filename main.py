@@ -1,14 +1,20 @@
 from kivymd.app import MDApp
-from screens.manager import AppManager
+
+from app.screens.manager import AppManager
 
 
 class PercentageApp(MDApp):
 
     def build(self):
+
+        self.title = "Percentage App"
+
         self.theme_cls.primary_palette = "Blue"
+
         self.theme_cls.theme_style = "Light"
 
         return AppManager()
 
 
-PercentageApp().run()
+if __name__ == "__main__":
+    PercentageApp().run()
