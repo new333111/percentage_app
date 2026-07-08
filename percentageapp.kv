@@ -1,38 +1,24 @@
 #:kivy 2.3.0
 
 AppManager:
+
     HomeScreen:
 
+
 <HomeScreen>:
+
     name: "home"
 
     MDBoxLayout:
+
         orientation: "vertical"
 
         MDTopAppBar:
-            title: "Percentage Calculator"
 
-        MDBoxLayout:
-            orientation: "vertical"
-            padding: "20dp"
-            spacing: "20dp"
+            title: "Percentage App"
 
-            MDTextField:
-                id: amount
-                hint_text: "Amount"
-                mode: "outlined"
+        MDLabel:
 
-            MDTextField:
-                id: percent
-                hint_text: "Percentage"
-                mode: "outlined"
+            text: "Welcome"
 
-            MDRaisedButton:
-                text: "Calculate"
-                pos_hint: {"center_x": .5}
-                on_release: root.calculate()
-
-            MDLabel:
-                id: result
-                text: "Result: 0"
-                halign: "center"
+            halign: "center"
