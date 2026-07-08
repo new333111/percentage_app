@@ -8,17 +8,15 @@ from app.screens.manager import AppManager
 class AndroidTemplateApp(MDApp):
 
     def build(self):
-        # تحميل جميع ملفات KV
+
         load_kv_files()
 
-        # معلومات التطبيق
         self.title = Config.APP_NAME
 
-        # إعداد الثيم
-        self.theme_cls.theme_style = Config.THEME_STYLE
         self.theme_cls.primary_palette = Config.PRIMARY_PALETTE
 
-        # إنشاء مدير الشاشات
+        self.theme_cls.theme_style = Config.THEME_STYLE
+
         return AppManager()
 
 
