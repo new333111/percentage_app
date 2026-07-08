@@ -1,11 +1,11 @@
 from kivy.app import App
-from screens.home import HomeScreen
+from screens.manager import AppManager
 
 
 class PercentageApp(App):
 
     def build(self):
-        return HomeScreen()
+        return AppManager()
 
 
 PercentageApp().run()
