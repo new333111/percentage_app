@@ -1,14 +1,24 @@
 class Config:
-    # معلومات التطبيق
-    APP_NAME = "Android Template"
-    VERSION = "0.1.0"
 
-    # الثيم
-    THEME_STYLE = "Light"
+    # -----------------------------
+    # Application
+    # -----------------------------
+
+    APP_NAME = "Android Template"
+
+    VERSION = "1.0.0"
+
+    AUTHOR = "Yahya Alemad"
+
+    # -----------------------------
+    # Theme
+    # -----------------------------
+
     PRIMARY_PALETTE = "Blue"
 
-    # شاشة البداية
-    SPLASH_TIME = 2
+    THEME_STYLE = "Light"
 
-    # اللغة
-    LANGUAGE = "en"
+    # -----------------------------
+    # Splash
+
+    SPLASH_TIME = 2
