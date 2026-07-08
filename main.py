@@ -1,11 +1,12 @@
 from kivy.app import App
-from ui import MainLayout
+from ui import MainUI
 
 
 class PercentageApp(App):
+
     def build(self):
         self.title = "Percentage Calculator"
-        return MainLayout()
+        return MainUI()
 
 
 if __name__ == "__main__":
