@@ -1,11 +1,24 @@
-# Percentage Calculator
+# Android Template
 
-A simple Android application built with Python and Kivy.
+Professional Android application template built with Python + KivyMD.
 
 ## Features
 
-- Calculate percentages
-- Simple UI
-- Android ready
+- Screen Manager
+- Splash Screen
+- Home Screen
+- Theme Support
+- Modular Architecture
+- Ready for SQLite
+- Ready for REST APIs
+- Ready for Buildozer
 
-## Author
+## Structure
+
+```
+app/
+assets/
+kv/
+```
+
+Author: Yahya Alemad
