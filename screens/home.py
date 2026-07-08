@@ -1,4 +1,5 @@
 from kivy.uix.screenmanager import Screen
+from services.calculator import Calculator
 
 
 class HomeScreen(Screen):
@@ -9,9 +10,9 @@ class HomeScreen(Screen):
             amount = float(self.ids.amount.text)
             percent = float(self.ids.percent.text)
 
-            result = amount * percent / 100
+            result = Calculator.percentage(amount, percent)
 
-            self.ids.result.text = f"Result : {result:.2f}"
+            self.ids.result.text = f"Result: {result:.2f}"
 
         except ValueError:
             self.ids.result.text = "Invalid Input"
