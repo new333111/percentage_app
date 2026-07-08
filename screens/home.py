@@ -1,5 +1,5 @@
-from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.screenmanager import Screen
 
 
-class HomeScreen(BoxLayout):
+class HomeScreen(Screen):
     pass
