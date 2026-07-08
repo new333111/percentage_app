@@ -1,6 +1,5 @@
-from kivy.uix.screenmanager import Screen
+from kivymd.uix.screen import MDScreen
 
 
-class HomeScreen(Screen):
-    """الشاشة الرئيسية"""
+class HomeScreen(MDScreen):
     pass
